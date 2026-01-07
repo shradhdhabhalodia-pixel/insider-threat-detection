@@ -25,7 +25,7 @@ This project addresses the problem by building **behavioral baselines** and **ag
 
 ## 🧠 Solution Architecture
 
-Raw CERT Data -> Feature Engineering (Per Data Source) -> Unsupervised Anomaly Detection (Isolation Forest) -> Risk Score Aggregation -> Explainable Insider Threat Dashboard
+Raw CERT Data  -> Feature Engineering (per data source) -> Processed Feature Tables -> Risk Aggregation -> Anomaly Detection Model -> Evaluation + Visualization -> Streamlit Dashboard
 
 ## 📂 Dataset
 - **Source:** CERT Insider Threat Dataset r5.2
@@ -94,5 +94,6 @@ python src/modeling/http_model.py
 python src/modeling/risk_aggregator.py
 
 streamlit run src/app.py
+
 
 
