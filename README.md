@@ -40,6 +40,9 @@ Explainable Insider Threat Dashboard
 
 ## 📂 Dataset
 - **Source:** CERT Insider Threat Dataset r5.2
+- **Data Access**
+    Due to size constraints, raw CERT dataset files are not included in this repository.
+    Users should download the dataset separately and place files under `data/raw/`.
 - **Files Used:**
   - `logon.csv`
   - `file.csv`
@@ -102,3 +105,4 @@ python src/modeling/http_model.py
 python src/modeling/risk_aggregator.py
 
 streamlit run src/app.py
+
